@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Scrolless - Screen Time Management</title>
+    <meta name="description" content="Take control of your screen time with Scrolless. Usage limits, downtime, and location-based blocking." />
+    <!-- Bootstrap CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles/custom.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+            <img src="assets/logo.svg" alt="Scrolless Logo" width="32" height="32">
+            <span class="fw-bold">scrolless</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+              <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+              <li class="nav-item"><a class="nav-link" href="#screenshots">Screenshots</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link" href="#notify">Follow Us</a></li>
+            </ul>
+            <div class="btn btn-secondary ms-lg-3 disabled">Coming Soon</div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="row align-items-center min-vh-100">
+            <div class="col-lg-6 order-2 order-lg-1">
+              <h1 class="display-3 fw-bold mb-4">Take control of your screen time, without the struggle.</h1>
+              <p class="lead mb-4 text-muted">scrolless</p>
+              <p class="mb-4 text-muted">Screen time management app that helps you manage your digital habits with three powerful blocking features.</p>
+              <div class="d-flex flex-wrap gap-3 mb-4">
+                <div class="btn btn-secondary btn-lg px-4 disabled">
+                  Coming Soon
+                </div>
+                <a class="btn btn-outline-light btn-lg px-4" href="#features">
+                  Learn More
+                </a>
+              </div>
+              <p class="text-muted small">Follow us for updates</p>
+            </div>
+            <div class="col-lg-6 mt-5 mt-lg-0 text-center order-1 order-lg-2">
+              <div class="phone-mockup">
+                <img src="assets/iphone1.png" alt="Scrolless app on iPhone" class="phone-image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="py-5">
+        <div class="container">
+          <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="fw-bold mb-3 scroll-animate">Features</h2>
+            </div>
+          </div>
+          <div class="row g-4 mb-5">
+            <div class="col-md-4">
+              <div class="feature-card h-100 scroll-animate scroll-animate-delay-1">
+                <div class="feature-icon mb-3">
+                  <i class="bi bi-clock-history"></i>
+                </div>
+                <h5 class="fw-bold mb-3">Usage Limit</h5>
+                <p class="text-muted mb-0">Set daily or weekly limits for specific apps. Get notified when you're approaching your limit, and block access when you've reached it.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="feature-card h-100 scroll-animate scroll-animate-delay-2">
+                <div class="feature-icon mb-3">
+                  <i class="bi bi-moon-stars"></i>
+                </div>
+                <h5 class="fw-bold mb-3">Downtime</h5>
+                <p class="text-muted mb-0">Schedule focused time blocks where selected apps are completely blocked. Perfect for work hours, meals, or bedtime.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="feature-card featured h-100 scroll-animate scroll-animate-delay-3">
+                <div class="badge-new">Unique</div>
+                <div class="feature-icon mb-3">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </div>
+                <h5 class="fw-bold mb-3">Location Blocking</h5>
+                <p class="text-muted mb-0">Automatically block apps when you enter specific locations using geofencing. Leave work and your work apps stay at work. Arrive home and social media gets blocked.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-4 mt-2">
+            <div class="col-md-6">
+              <div class="feature-detail scroll-animate">
+                <h6 class="fw-bold mb-2"><i class="bi bi-shield-check me-2"></i>Private & Secure</h6>
+                <p class="text-muted small mb-0">All location data and app usage stays on your device. We never see your data.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature-detail scroll-animate scroll-animate-delay-1">
+                <h6 class="fw-bold mb-2"><i class="bi bi-battery-full me-2"></i>Battery Efficient</h6>
+                <p class="text-muted small mb-0">Smart geofencing that uses minimal battery while maintaining accuracy.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature-detail scroll-animate scroll-animate-delay-2">
+                <h6 class="fw-bold mb-2"><i class="bi bi-app me-2"></i>Works with Any App</h6>
+                <p class="text-muted small mb-0">Block any app on your device. Social media, games, browsers, or productivity apps.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature-detail scroll-animate scroll-animate-delay-3">
+                <h6 class="fw-bold mb-2"><i class="bi bi-sliders me-2"></i>Fully Customizable</h6>
+                <p class="text-muted small mb-0">Create multiple blocking profiles for different days, times, and locations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="screenshots" class="py-5">
+        <div class="container">
+          <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="fw-bold mb-3 scroll-animate">See it in action</h2>
+              <p class="lead text-muted scroll-animate scroll-animate-delay-1">Experience how Scrolless helps you manage your screen time</p>
+            </div>
+          </div>
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-6">
+              <div class="screenshot-card scroll-animate scroll-animate-delay-1">
+                <div class="screenshot-badge">Geofencing</div>
+                <img src="assets/iphonegeo.png" alt="Geofencing feature" class="screenshot-image">
+                <div class="screenshot-overlay">
+                  <h5 class="fw-bold mb-2">Location-Based Blocking</h5>
+                  <p class="text-muted small mb-0">Set up geofences to automatically block apps when you enter specific locations</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="screenshot-content scroll-animate scroll-animate-delay-2">
+                <h3 class="fw-bold mb-4">Smart Geofencing</h3>
+                <p class="text-muted mb-4">Our unique geofencing feature uses your device's location to automatically enforce screen time rules. Create virtual boundaries around locations like work, home, or the gym.</p>
+                <ul class="screenshot-features">
+                  <li class="mb-3">
+                    <i class="bi bi-geo-alt-fill text-primary me-2"></i>
+                    <span>Set multiple geofence zones</span>
+                  </li>
+                  <li class="mb-3">
+                    <i class="bi bi-bell-fill text-primary me-2"></i>
+                    <span>Get notified when entering/exiting zones</span>
+                  </li>
+                  <li class="mb-3">
+                    <i class="bi bi-shield-lock-fill text-primary me-2"></i>
+                    <span>Automatic app blocking based on location</span>
+                  </li>
+                  <li class="mb-3">
+                    <i class="bi bi-battery-full text-primary me-2"></i>
+                    <span>Battery-efficient location tracking</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="notify" class="py-5 bg-section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <div class="scroll-animate">
+                <h2 class="fw-bold mb-3">Follow Us</h2>
+                <p class="lead text-muted mb-4">Stay updated on Scrolless development by following us on social media!</p>
+              </div>
+              <div class="card shadow-sm border-0 bg-secondary scroll-animate scroll-animate-delay-1">
+                <div class="card-body p-4 p-md-5">
+                  <div class="social-links">
+                    <a href="https://www.instagram.com/scrollesshq/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-lg me-3 mb-3">
+                      <i class="bi bi-instagram me-2"></i>Instagram
+                    </a>
+                    <a href="#" class="btn btn-outline-light btn-lg me-3 mb-3">
+                      <i class="bi bi-twitter me-2"></i>Twitter
+                    </a>
+                    <a href="#" class="btn btn-outline-light btn-lg mb-3">
+                      <i class="bi bi-github me-2"></i>GitHub
+                    </a>
+                  </div>
+                  <div class="mt-4">
+                    <p class="text-muted small mb-0">
+                      <i class="bi bi-info-circle me-1"></i>Get the latest updates on our development progress
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="py-5">
+        <div class="container">
+          <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="fw-bold mb-3 scroll-animate">Pricing</h2>
+            </div>
+          </div>
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-5">
+              <div class="pricing-card scroll-animate scroll-animate-delay-1">
+                <div class="pricing-header mb-4">
+                  <h5 class="fw-bold mb-2">Free</h5>
+                  <div class="pricing-amount">
+                    <span class="display-4 fw-bold">$0</span>
+                    <span class="text-muted">/month</span>
+                  </div>
+                  <p class="text-muted small mb-0">Essential features for getting started</p>
+                </div>
+                <ul class="pricing-features mb-4">
+                  <li><i class="bi bi-check-circle-fill me-2"></i>Usage limits</li>
+                  <li><i class="bi bi-check-circle-fill me-2"></i>Basic downtime</li>
+                  <li><i class="bi bi-check-circle-fill me-2"></i>1 location geofence</li>
+                  <li><i class="bi bi-check-circle-fill me-2"></i>Email support</li>
+                </ul>
+                <div class="btn btn-secondary w-100 disabled">Coming Soon</div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-5">
+              <div class="pricing-card featured scroll-animate scroll-animate-delay-2">
+                <div class="badge-popular">Popular</div>
+                <div class="pricing-header mb-4">
+                  <h5 class="fw-bold mb-2">Pro</h5>
+                  <div class="pricing-amount">
+                    <span class="display-4 fw-bold">$4.99</span>
+                    <span class="text-muted">/month</span>
+                  </div>
+                  <p class="text-muted small mb-0">Unlock all features</p>
+                </div>
+                <ul class="pricing-features mb-4">
+                  <li><i class="bi bi-check-circle-fill me-2"></i>Everything in Free</li>
+                  <li><i class="bi bi-check-circle-fill me-2"></i>Unlimited location geofences</li>
+                  <li><i class="bi bi-check-circle-fill me-2"></i>Advanced scheduling</li>
+                  <li><i class="bi bi-check-circle-fill me-2"></i>Multiple profiles</li>
+                  <li><i class="bi bi-check-circle-fill me-2"></i>Usage analytics</li>
+                  <li><i class="bi bi-check-circle-fill me-2"></i>Priority support</li>
+                </ul>
+                <div class="btn btn-secondary w-100 disabled">Coming Soon</div>
+                <p class="text-muted small text-center mt-3 mb-0">Follow us for launch updates</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="download" class="py-5 bg-section text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <h2 class="fw-bold mb-4 scroll-animate">Ready to take control?</h2>
+              <p class="lead text-muted mb-5 scroll-animate scroll-animate-delay-1">Scrolless is coming soon. Follow us for updates!</p>
+              <div class="scroll-animate scroll-animate-delay-2">
+                <div class="btn btn-secondary btn-lg px-5 disabled">
+                  <i class="bi bi-clock me-2"></i>Coming Soon
+                </div>
+                <p class="text-muted small mt-3 mb-0">Follow us on social media for launch updates</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <h6 class="fw-bold mb-3">scrolless</h6>
+            <p class="text-muted small mb-3">Screen time management that actually works.</p>
+            <div class="d-flex gap-3">
+              <a href="https://www.instagram.com/scrollesshq/" target="_blank" rel="noopener noreferrer" class="text-muted text-decoration-none" aria-label="Follow us on Instagram">
+                <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <h6 class="fw-bold mb-3 small">Product</h6>
+            <ul class="list-unstyled">
+              <li><a href="#features" class="text-muted text-decoration-none small">Features</a></li>
+              <li><a href="#pricing" class="text-muted text-decoration-none small">Pricing</a></li>
+              <li><a href="#download" class="text-muted text-decoration-none small">Download</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <h6 class="fw-bold mb-3 small">Support</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-muted text-decoration-none small">Documentation</a></li>
+              <li><a href="#" class="text-muted text-decoration-none small">Privacy</a></li>
+              <li><a href="#" class="text-muted text-decoration-none small">Terms</a></li>
+        </ul>
+          </div>
+        </div>
+        <hr class="my-4 border-secondary">
+        <div class="text-center">
+          <p class="mb-0 text-muted small">© 2025 scrolless. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS bundle (Popper included) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Smooth scroll script -->
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            const offset = 80;
+            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({
+              top: targetPosition,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+
+      // Scroll animation observer
+      const observerOptions = {
+        threshold: 0.2,
+        rootMargin: '0px 0px -100px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animated');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      // Observe all elements with scroll-animate class
+      document.querySelectorAll('.scroll-animate').forEach(el => {
+        observer.observe(el);
+      });
+
+      // Navbar scroll effect
+      const navbar = document.querySelector('.navbar');
+      let lastScroll = 0;
+
+      window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        
+        if (currentScroll > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+
+        lastScroll = currentScroll;
+      });
+
+      // Add parallax effect to hero section
+      window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const hero = document.querySelector('.hero');
+        if (hero && scrolled < window.innerHeight) {
+          hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+          hero.style.opacity = 1 - (scrolled / window.innerHeight) * 0.5;
+        }
+      });
+
+      // Add cursor trail effect (optional modern touch)
+      let cursorTrail = [];
+      const maxTrailLength = 20;
+
+      document.addEventListener('mousemove', (e) => {
+        cursorTrail.push({ x: e.clientX, y: e.clientY, time: Date.now() });
+        
+        if (cursorTrail.length > maxTrailLength) {
+          cursorTrail.shift();
+        }
+
+        // Remove old trail points
+        cursorTrail = cursorTrail.filter(point => Date.now() - point.time < 1000);
+      });
+
+      // Social media link tracking (optional analytics)
+      document.querySelectorAll('.social-links a').forEach(link => {
+        link.addEventListener('click', function() {
+          // Optional: Add analytics tracking here
+          console.log('Social media link clicked:', this.href);
+        });
+      });
+    </script>
+  </body>
+</html>
