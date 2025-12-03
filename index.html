@@ -32,7 +32,13 @@
               <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
               <li class="nav-item"><a class="nav-link" href="#notify">Follow Us</a></li>
             </ul>
-            <div class="btn btn-secondary ms-lg-3 disabled">Coming Soon</div>
+            <div class="btn btn-secondary ms-lg-3 disabled coming-soon-animated">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Coming Soon
+            </div>
           </div>
         </div>
       </nav>
@@ -47,7 +53,11 @@
               <p class="lead mb-4 text-muted">scrolless</p>
               <p class="mb-4 text-muted">Screen time management app that helps you manage your digital habits with three powerful blocking features.</p>
               <div class="d-flex flex-wrap gap-3 mb-4">
-                <div class="btn btn-secondary btn-lg px-4 disabled">
+                <div class="btn btn-secondary btn-lg px-4 disabled coming-soon-animated">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
                   Coming Soon
                 </div>
                 <a class="btn btn-outline-light btn-lg px-4" href="#features">
@@ -231,7 +241,13 @@
                   <li><i class="bi bi-check-circle-fill me-2"></i>Up to 3 groups</li>
                   <li><i class="bi bi-check-circle-fill me-2"></i>Usage analytics</li>
                 </ul>
-                <div class="btn btn-secondary w-100 disabled">Coming Soon</div>
+                <div class="btn btn-secondary w-100 disabled coming-soon-animated">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  Coming Soon
+                </div>
               </div>
             </div>
             <div class="col-md-6 col-lg-5">
@@ -253,7 +269,13 @@
                   <li><i class="bi bi-check-circle-fill me-2"></i>Visual customization</li>
                   <li><i class="bi bi-check-circle-fill me-2"></i>Different blocking difficulty levels</li>
                 </ul>
-                <div class="btn btn-secondary w-100 disabled">Coming Soon</div>
+                <div class="btn btn-secondary w-100 disabled coming-soon-animated">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  Coming Soon
+                </div>
                 <p class="text-muted small text-center mt-3 mb-0">Follow us for launch updates</p>
               </div>
             </div>
@@ -268,7 +290,11 @@
               <h2 class="fw-bold mb-4 scroll-animate">Ready to take control?</h2>
               <p class="lead text-muted mb-5 scroll-animate scroll-animate-delay-1">Scrolless is coming soon. Follow us for updates!</p>
               <div class="scroll-animate scroll-animate-delay-2">
-                <div class="btn btn-secondary btn-lg px-5 disabled">
+                <div class="btn btn-secondary btn-lg px-5 disabled coming-soon-animated">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
                   <i class="bi bi-clock me-2"></i>Coming Soon
                 </div>
                 <p class="text-muted small mt-3 mb-0">Follow us on social media for launch updates</p>
@@ -362,13 +388,21 @@
         lastScroll = currentScroll;
       });
 
-      // Add parallax effect to hero section
+      // Add parallax effect to hero section and fade to black
       window.addEventListener('scroll', () => {
         const scrolled = window.pageYOffset;
         const hero = document.querySelector('.hero');
+        const fadeDistance = 1200; // Fixed pixel distance for consistent timing across devices
+        
         if (hero && scrolled < window.innerHeight) {
           hero.style.transform = `translateY(${scrolled * 0.5}px)`;
           hero.style.opacity = 1 - (scrolled / window.innerHeight) * 0.5;
+          
+          // Fade to black overlay - consistent timing across all devices
+          const fadeAmount = Math.min(scrolled / fadeDistance, 1);
+          hero.style.setProperty('--fade-opacity', fadeAmount);
+        } else if (hero && scrolled >= window.innerHeight) {
+          hero.style.setProperty('--fade-opacity', '1');
         }
       });
 
