@@ -325,6 +325,12 @@
               <li><a href="#download" class="text-muted text-decoration-none small">Download</a></li>
             </ul>
           </div>
+          <div class="col-md-3 col-6">
+            <h6 class="fw-bold mb-3 small">Legal</h6>
+            <ul class="list-unstyled">
+              <li><a href="privacy.html" class="text-muted text-decoration-none small">Privacy Policy</a></li>
+            </ul>
+          </div>
         </div>
         <hr class="my-4 border-secondary">
         <div class="text-center">
@@ -392,13 +398,14 @@
       window.addEventListener('scroll', () => {
         const scrolled = window.pageYOffset;
         const hero = document.querySelector('.hero');
-        const fadeDistance = 1200; // Fixed pixel distance for consistent timing across devices
+        // Use viewport-relative distance but ensure phones have enough scroll room
+        const fadeDistance = Math.max(window.innerHeight * 3, 2000); // Minimum 2000px or 3 viewport heights
         
         if (hero && scrolled < window.innerHeight) {
           hero.style.transform = `translateY(${scrolled * 0.5}px)`;
           hero.style.opacity = 1 - (scrolled / window.innerHeight) * 0.5;
           
-          // Fade to black overlay - consistent timing across all devices
+          // Fade to black overlay - slower fade that works on all devices
           const fadeAmount = Math.min(scrolled / fadeDistance, 1);
           hero.style.setProperty('--fade-opacity', fadeAmount);
         } else if (hero && scrolled >= window.innerHeight) {
